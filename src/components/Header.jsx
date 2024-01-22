@@ -1,25 +1,42 @@
-export default function Header() {
+import PropTypes from 'prop-types';
+export default function Header(props) {
+  const { updateData, chosenOne } = props;
+
+  function languageChange(language) {
+    updateData(language);
+  }
   return (
     <div className="header">
       <div className="left-nav">
         <div className="nav-name">
-          <h1>
-            Rita
-            <br />
-            Chen
-          </h1>
-          <p>Web Developer</p>
+          <h1>{chosenOne.name}</h1>
+          <p>{chosenOne.job}</p>
         </div>
         <img alt="avatar" src="../assets/avatar.jpg" />
       </div>
       <div className="right-nav">
         <ul>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Language</li>
-          <li>Resume</li>
+          <div className="dropdown">
+            <li className="drop--btn">{chosenOne.menu1}</li>
+            <div className="dropdown--content">
+              <li onClick={() => languageChange('mandarin')}>中文</li>
+              <li onClick={() => languageChange('english')}>English</li>
+              <li onClick={() => languageChange('korean')}>한국어</li>
+            </div>
+          </div>
+          <li>{chosenOne.menu2}</li>
         </ul>
       </div>
     </div>
   );
 }
+
+Header.propTypes = {
+  updateData: PropTypes.func,
+  chosenOne: PropTypes.shape({
+    name: PropTypes.string,
+    job: PropTypes.string,
+    menu1: PropTypes.string,
+    menu2: PropTypes.string,
+  }),
+};

@@ -6,12 +6,16 @@ import {
   faLocationDot,
   faPhone,
 } from '@fortawesome/free-solid-svg-icons';
+//for propTypes
+import PropTypes from 'prop-types';
 
-export default function Main() {
+export default function Main(props) {
+  const { chosenOne } = props;
+
   return (
     <div className="main">
       <div className="col-3 contact">
-        <h2>Contact</h2>
+        <h2>{chosenOne.contact}</h2>
         <ul>
           <li>
             <FontAwesomeIcon icon={faGithub} />
@@ -48,18 +52,9 @@ export default function Main() {
         </ul>
       </div>
       <div className="col-6 hero-and-project">
-        <h2>About me</h2>
-        <p>
-          Hello This is Chen Yi Rou!
-          <br />
-          As a NON computer science graduate, I realize I'm lack of computer
-          science knowledge.
-          <br /> However, I'm willing to learn by myself through the Internet
-          and take some related courses while I was attending school. <br />
-          There are a lot of thing to catch up, but I will do my best to become
-          a qualified web developer!
-        </p>
-        <h2>My project</h2>
+        <h2>{chosenOne.aboutMe}</h2>
+        <p>{chosenOne.description}</p>
+        <h2>{chosenOne.project}</h2>
         <ul className="project-ls">
           <li>
             <h4>THINGS TO DO</h4>
@@ -80,20 +75,34 @@ export default function Main() {
         </ul>
       </div>
       <div className="col-3 skills">
-        <h2>Skills</h2>
+        <h2>{chosenOne.skill}</h2>
         <ul>
           <li>HTML, CSS, JavaScript</li>
           <li>JSX, React.js, React Router</li>
           <li>Python, C</li>
           <li>Git, GitHub</li>
         </ul>
-        <h2>Languages</h2>
+        <h2>{chosenOne.knowLanguage}</h2>
         <ul>
-          <li>Mandarin</li>
-          <li>English</li>
-          <li>Korean</li>
+          <li>{chosenOne.detail1}</li>
+          <li>{chosenOne.detail2}</li>
+          <li>{chosenOne.detail3}</li>
         </ul>
       </div>
     </div>
   );
 }
+
+Main.propTypes = {
+  chosenOne: PropTypes.shape({
+    contact: PropTypes.string,
+    aboutMe: PropTypes.string,
+    description: PropTypes.string,
+    project: PropTypes.string,
+    skill: PropTypes.string,
+    knowLanguage: PropTypes.string,
+    detail1: PropTypes.string,
+    detail2: PropTypes.string,
+    detail3: PropTypes.string,
+  }),
+};
