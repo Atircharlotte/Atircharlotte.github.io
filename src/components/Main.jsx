@@ -57,20 +57,38 @@ export default function Main(props) {
         <h2>{chosenOne.project}</h2>
         <ul className="project-ls">
           <li>
-            <h4>THINGS TO DO</h4>
-            <a href="https://thingstodowow.netlify.app">
+            <h4>1. THINGS TO DO (React + Create React app cml)</h4>
+            <a
+              href="https://thingstodowow.netlify.app"
+              title="click to open the project!"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img alt="things to do" src="assets/thingsToDo.jpg" />
             </a>
           </li>
 
           <li>
-            <h4>MOVIE STATION</h4>
-            <a href="https://moviestationwow.netlify.app">
+            <h4>2. MOVIE STATION (HTML + CSS + JavaScript)</h4>
+            <a
+              href="https://moviestationwow.netlify.app"
+              title="click to open the project!"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img alt="movie station" src="assets/movieStation.jpg" />
             </a>
           </li>
           <li>
-            <h4>SWEETIE</h4>
+            <h4>3. SWEETIE (React + React Router + Vite)</h4>
+            <a
+              href="#"
+              title="click to open the project!"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img alt="sweetie" src="assets/sweetie.jpg" />
+            </a>
           </li>
         </ul>
       </div>

@@ -9,6 +9,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Hahmlet', serif;
 }
 body {
   margin: 0;
@@ -96,12 +97,13 @@ body {
 }
 .dropdown {
   display: inline-block;
+  padding: 10px;
 }
 .dropdown--content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 100px;
+  min-width: 85px;
   z-index: 1;
   border-radius: 5px;
 }
@@ -128,6 +130,14 @@ body {
 /*main section*/
 .contact > ul {
   list-style: none;
+  line-height: 50px;
+}
+.skills > ul {
+  line-height: 40px;
+}
+.skills > ul li::marker {
+  color: #06bcc1;
+  font-size: 1.5rem;
 }
 /*project section*/
 .project-ls {

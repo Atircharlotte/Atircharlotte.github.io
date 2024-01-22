@@ -16,6 +16,7 @@ export default function Header(props) {
       </div>
       <div className="right-nav">
         <ul>
+          <li className="drop--btn">{chosenOne.menu2}</li>
           <div className="dropdown">
             <li className="drop--btn">{chosenOne.menu1}</li>
             <div className="dropdown--content">
@@ -24,7 +25,6 @@ export default function Header(props) {
               <li onClick={() => languageChange('korean')}>한국어</li>
             </div>
           </div>
-          <li>{chosenOne.menu2}</li>
         </ul>
       </div>
     </div>
