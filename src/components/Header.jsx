@@ -16,7 +16,26 @@ export default function Header(props) {
       </div>
       <div className="right-nav">
         <ul>
-          <li className="drop--btn">{chosenOne.menu2}</li>
+          <div className="dropdown">
+            <li className="drop--btn">{chosenOne.menu2}</li>
+            <div className="dropdown--content">
+              <li>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  中文
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1GTVB_6ujOzQOYpMWdtfplRMwlLBrRYjl/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  English
+                </a>
+              </li>
+            </div>
+          </div>
+
           <div className="dropdown">
             <li className="drop--btn">{chosenOne.menu1}</li>
             <div className="dropdown--content">

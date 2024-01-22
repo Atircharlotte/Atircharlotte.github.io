@@ -19,7 +19,7 @@ createServer({
             contact: '연락처',
             aboutMe: '자기소개',
             description:
-              '안녕하세요! 저는 젠이러우라고 합니다. 저는 훌륭한 웹 개발자가 될 도록 노력하고 있습니다. 이념과 가까한 회사에서 동료와 같이 일하면서 회사를 잘 될 수 있게 하는 것을 제 목표입니다. ',
+              '안녕하세요! 저는 젠이러우라고 합니다. 영어 이름 리타라고 불러도 됩니다! 저는 웹 개발에 대한 관심을 가지고 있으며 특히 사용자 화면을 디자인하는 것을 좋아합니다. 더 이쁜 화면을 볼 수 있고 편허게 쓸 수 있는 엡을 디자인하는 것은 제 목표입니다. 개발할 때에 자주 사용하는 프로그래밍 언어는 HTML, CSS, JavaScript 등이 있습니다. 사이드 프로젝트를 만들 때 보통 React프래임워크를 사용합니다. 회사에서 동료와 같이 팀워크를 통해 규모가 더 큰 프로젝트를 해 냈으면 좋겠다는 생각이 들었습니다.',
             skill: '특기사항',
             project: '마이 프로젝트',
             knowLanguage: '언어',
@@ -37,8 +37,7 @@ createServer({
             menu2: 'Resume',
             contact: 'Contact',
             aboutMe: 'About me',
-            description:
-              'Hello This is Chen Yi Rou! As a NON computer science graduate, I realize I am lack of computer science knowledge.However, I am willing to learn by myself through the Internet and take some related courses while I was attending school.There are a lot of thing to catch up, but I will do my best to become a qualified web developer!',
+            description: `Hello! I'm Chen Yi You, but you can call me Rita. Passionate about front-end development, I specialize in crafting beautiful UI screens and enhancing user experiences. Proficient in HTML, CSS, and JavaScript, I have hands-on experience with frameworks like React. I am excited about the opportunity to contribute my skills and creativity to a dynamic development team. Looking forward to the possibility of working together and bringing impactful designs to life!`,
             skill: 'Skills',
             project: 'My Projects',
             knowLanguage: 'Languages',
@@ -57,7 +56,7 @@ createServer({
             contact: '聯絡資訊',
             aboutMe: '關於我',
             description:
-              '您好！我是陳以柔，木蟲誒一位優秀的前端工程師，期待和公司裡的圖示妹一起完成專案，一起成長！',
+              '你好！我是陳以柔，也可以叫我Rita。我對於前端開發很有興趣，特別是設計美麗的介面以及兼顧使用者的方便性。平常使用的技術有HTML, CSS, JavaScript等。製作side project時使用React的框架。期待能夠有機會在公司裡貢獻自己的技能，與同事合作開發更完整、規模更大的專案。在工作之餘，也會繼續研究前端開發的新技術以及培養對美學設計的敏感度。',
             skill: '技能',
             project: '我的專案',
             knowLanguage: '語言',

@@ -114,6 +114,9 @@ body {
   display: block;
   text-align: left;
 }
+.dropdown--content li > a {
+  text-decoration: none;
+}
 .dropdown--content > li:hover {
   background-color: #5e95bd;
   color: white;
@@ -139,12 +142,30 @@ body {
   color: #06bcc1;
   font-size: 1.5rem;
 }
+.warning {
+  background-color: brown;
+  color: white;
+  padding: 5px 5px;
+  width: 130px;
+  border-radius: 25px;
+}
 /*project section*/
 .project-ls {
   list-style: none;
 }
 .project-ls > li > a > img {
   width: 100%;
+}
+.contact > h2,
+.hero-and-project > h2,
+.skills > h2 {
+  text-decoration: underline;
+}
+.contact > h2:hover,
+.hero-and-project > h2:hover,
+.skills > h2:hover {
+  font-size: 30px;
+  color: #5e95bd;
 }
 .main {
   margin-left: 15px;
@@ -154,7 +175,7 @@ body {
   text-align: center;
   background-color: #5e95bd;
   padding: 15px;
-
+  color: white;
   bottom: 0;
   width: 100%;
 }

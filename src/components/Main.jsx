@@ -80,9 +80,13 @@ export default function Main(props) {
             </a>
           </li>
           <li>
-            <h4>3. SWEETIE (React + React Router + Vite)</h4>
+            <h4>
+              3. SWEETIE (React + React Router + Vite)
+              <pre className="warning">still editting!</pre>
+            </h4>
+
             <a
-              href="#"
+              href="https://sweetiedesserts.netlify.app"
               title="click to open the project!"
               target="_blank"
               rel="noopener noreferrer"
