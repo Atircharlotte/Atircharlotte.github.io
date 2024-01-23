@@ -20,7 +20,11 @@ export default function Header(props) {
             <li className="drop--btn">{chosenOne.menu2}</li>
             <div className="dropdown--content">
               <li>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://drive.google.com/file/d/1ci1EdraOSNVSsG-z5EjjrE6tbJx07Tvp/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   中文
                 </a>
               </li>
